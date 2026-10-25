@@ -1,0 +1,117 @@
+
+/* Contenedor general de la aplicación */
+
+.app {
+  min-height: 100vh;
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+}
+
+/* Área principal del contenido */
+
+.contenido {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 48px 24px;
+}
+
+/* Encabezado de bienvenida */
+
+.encabezado {
+  margin-bottom: 40px;
+}
+
+.etiqueta {
+  display: inline-block;
+  margin-bottom: 12px;
+  color: var(--color-violeta-claro);
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.titulo {
+  margin: 0 0 12px;
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 700;
+  letter-spacing: -0.04em;
+}
+
+.descripcion {
+  max-width: 620px;
+  margin: 0;
+  color: var(--color-texto-secundario);
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+/* Adaptación para pantallas pequeñas */
+
+@media (max-width: 600px) {
+  .contenido {
+    padding: 32px 18px;
+  }
+
+  .encabezado {
+    margin-bottom: 28px;
+  }
+}
+
+/* Sección de categorías */
+
+.seccionCategorias {
+  margin-top: 48px;
+}
+
+.encabezadoCategorias {
+  margin-bottom: 24px;
+}
+
+.tituloSeccion {
+  margin: 0 0 8px;
+  color: var(--color-texto);
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.descripcionSeccion {
+  margin: 0;
+  color: var(--color-texto-secundario);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* Grilla de tarjetas */
+
+.grillaCategorias {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+/* Adaptación a tablets */
+
+@media (max-width: 900px) {
+  .grillaCategorias {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* Adaptación a móviles */
+
+@media (max-width: 600px) {
+  .seccionCategorias {
+    margin-top: 36px;
+  }
+
+  .grillaCategorias {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .tituloSeccion {
+    font-size: 1.3rem;
+  }
+}

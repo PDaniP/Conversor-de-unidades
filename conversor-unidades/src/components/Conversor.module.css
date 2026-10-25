@@ -1,0 +1,135 @@
+
+.conversor {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.campoValor {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.campoValor label {
+  color: var(--color-texto-secundario);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.campoValor input {
+  width: 100%;
+  min-height: 58px;
+  padding: 14px 16px;
+
+  color: var(--color-texto);
+  background: var(--color-fondo);
+  border: 1px solid var(--color-borde);
+  border-radius: 10px;
+
+  font-size: 1.25rem;
+  outline: none;
+}
+
+.campoValor input:focus-visible {
+  border-color: var(--color-violeta);
+  outline: 2px solid var(--color-violeta);
+  outline-offset: 2px;
+}
+
+.filaUnidades {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+  align-items: end;
+  gap: 16px;
+}
+
+.botonIntercambiar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 48px;
+  height: 48px;
+  margin-bottom: 2px;
+
+  color: var(--color-violeta-claro);
+  background: rgb(139 92 246 / 14%);
+  border: 1px solid var(--color-borde);
+  border-radius: 12px;
+
+  font-size: 1.6rem;
+  transition:
+    background-color 180ms ease,
+    border-color 180ms ease;
+}
+
+.botonIntercambiar:hover {
+  background: rgb(139 92 246 / 25%);
+  border-color: var(--color-violeta);
+}
+
+.resultado {
+  padding: 24px;
+
+  background: var(--color-fondo);
+  border: 1px solid var(--color-borde);
+  border-radius: 12px;
+}
+
+.etiquetaResultado {
+  display: block;
+  margin-bottom: 12px;
+
+  color: var(--color-texto-secundario);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.valorResultado {
+  margin: 0;
+  color: var(--color-violeta-claro);
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  font-weight: 700;
+  overflow-wrap: anywhere;
+}
+
+.valorResultado span {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.detalleResultado {
+  margin: 14px 0 0;
+  color: var(--color-texto-secundario);
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+
+.mensajeError {
+  margin: 0;
+  color: #fca5a5;
+  line-height: 1.6;
+}
+
+@media (max-width: 600px) {
+  .filaUnidades {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 16px;
+  }
+
+  .botonIntercambiar {
+    justify-self: center;
+    transform: rotate(90deg);
+  }
+
+  .resultado {
+    padding: 20px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .botonIntercambiar {
+    transition: none;
+  }
+}

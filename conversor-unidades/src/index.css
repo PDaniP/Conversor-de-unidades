@@ -1,0 +1,65 @@
+
+/* ==============================
+   1. Variables globales
+================================= */
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+  color: #f4f1ff;
+  background-color: #100f17;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --color-fondo: #100f17;
+  --color-superficie: #191724;
+  --color-superficie-hover: #242034;
+
+  --color-violeta: #8b5cf6;
+  --color-violeta-claro: #a78bfa;
+
+  --color-texto: #f4f1ff;
+  --color-texto-secundario: #aaa5bb;
+  --color-borde: #302a40;
+}
+
+/* ==============================
+   2. Reinicio básico
+================================= */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* ==============================
+   3. Raíz de React
+================================= */
+
+#root {
+  min-height: 100vh;
+}
