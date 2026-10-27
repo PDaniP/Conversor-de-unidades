@@ -18,7 +18,7 @@ function EquivalenciasTemperatura({ valor, unidades, unidadOrigen }) {
   }
 
   //calculo cada equivalencia
-  let resultados = [];
+  let resultados;
 
   try {
     resultados = unidades.map((unidad) => ({

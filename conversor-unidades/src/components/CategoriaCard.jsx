@@ -12,7 +12,7 @@ function CategoriaCard({ simbolo, titulo, descripcion, onClick }) {
 
       <span className={styles.enlace}>
         Explorar unidades
-        <span aria-hidden="true"> →</span>
+      <span aria-hidden="true"> →</span>
       </span>
     </button>
   );

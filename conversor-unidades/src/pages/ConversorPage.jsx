@@ -3,6 +3,14 @@ import Conversor from "../components/Conversor";
 import ConversorTemperatura from "../components/ConversorTemperatura";
 import ConversorMasa from "../components/ConversorMasa";
 import ConversorVolumen from "../components/ConversorVolumen";
+import ConversorArea from "../components/ConversorArea";
+import ConversorTiempo from "../components/ConversorTiempo";
+import ConversorVelocidad from "../components/ConversorVelocidad";
+import ConversorFuerza from "../components/ConversorFuerza";
+import ConversorEnergia from "../components/ConversorEnergia";
+import ConversorPresion from "../components/ConversorPresion";
+import ConversorFrecuencia from "../components/ConversorFrecuencia";
+import ConversorDatosDigitales from "../components/ConversorDatosDigitales";
 
 function ConversorPage({ categoria, onVolver }) {
     return (
@@ -46,9 +54,23 @@ function ConversorPage({ categoria, onVolver }) {
                     <ConversorMasa />
                 ) : categoria.id === "volumen" ? (
                     <ConversorVolumen />
-                ) : (
-                    <p>Proximamente...</p>
-                )}
+                ) : categoria.id === "area" ? (
+                    <ConversorArea />
+                ) : categoria.id === "tiempo" ? (
+                    <ConversorTiempo />
+                ) : categoria.id === "velocidad" ? (
+                    <ConversorVelocidad />
+                ) : categoria.id === "fuerza" ? (
+                    <ConversorFuerza />
+                ) : categoria.id === "energia" ? (
+                    <ConversorEnergia />
+                ) : categoria.id === "presion" ? (
+                    <ConversorPresion />
+                ) : categoria.id === "frecuencia" ? (
+                    <ConversorFrecuencia />
+                ) : categoria.id === "datosDigitales" ? (
+                    <ConversorDatosDigitales />
+                ) : null}
             </section>
         </main>
     );

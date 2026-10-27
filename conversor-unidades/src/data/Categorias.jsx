@@ -47,6 +47,30 @@ const categorias = [
     titulo: "Fuerza",
     descripcion: "Newtons, kilonewtons, dinas y kilogramo-fuerza.",
   },
+  {
+    id: "energia",
+    simbolo: "ϟ",
+    titulo: "Energía",
+    descripcion: "Joules, calorías, vatios-hora y electronvoltios.",
+  },
+  {
+    id: "presion",
+    simbolo: "◉",
+    titulo: "Presión",
+    descripcion: "Pascales, bares, atmósferas, psi y mmHg.",
+  },
+  {
+    id: "frecuencia",
+    simbolo: "∿",
+    titulo: "Frecuencia",
+    descripcion: "Hertz, kilohertz, megahertz y gigahertz.",
+  },
+  {
+    id: "datosDigitales",
+    simbolo: "▣",
+    titulo: "Datos digitales",
+    descripcion: "Bits, bytes, kilobytes, megabytes y más.",
+  },
 ];
 
 export default categorias;
